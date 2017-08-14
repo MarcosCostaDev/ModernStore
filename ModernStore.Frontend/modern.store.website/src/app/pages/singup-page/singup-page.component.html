@@ -1,0 +1,54 @@
+<section class="hero is-primary is-fullheight">
+  <div class="hero-body">
+    <div class="container has-text-centered">
+      <h1 class="title pacifico larger-text">
+        Modern Web Store
+      </h1>
+      <div class="columns is-mobile">
+        <div class="column is-half is-offset-one-quarter">
+          <div class="notification is-danger" *ngIf="errors.length > 0">
+            <ul>
+              <li *ngFor="let err of errors">
+                {{ err.message }}
+              </li>
+            </ul>
+          </div>
+          <form [formGroup]="form">
+            <p class="control">
+              <input class="input is-large" type="text" placeholder="Nome" formControlName="firstName" [ngClass]="{'is-danger': (!form.controls.firstName.valid && !form.controls.firstName.pristine)}">
+            </p>
+
+            <p class="control">
+              <input class="input is-large" type="text" placeholder="Sobrenome" formControlName="lastName" [ngClass]="{'is-danger': (!form.controls.lastName.valid && !form.controls.lastName.pristine)}">
+            </p>
+
+            <p class="control">
+              <input class="input is-large" type="text" placeholder="Email" formControlName="email" [ngClass]="{'is-danger': (!form.controls.email.valid && !form.controls.email.pristine)}">
+            </p>
+
+            <p class="control">
+              <input class="input is-large" type="text" placeholder="CPF" formControlName="document" [ngClass]="{'is-danger': (!form.controls.document.valid && !form.controls.document.pristine)}" number>
+            </p>
+
+            <p class="control">
+              <input class="input is-large" type="text" placeholder="Usuário" formControlName="username" [ngClass]="{'is-danger': (!form.controls.username.valid && !form.controls.username.pristine)}">
+            </p>
+
+            <p class="control">
+              <input class="input is-large" type="password" placeholder="Senha" formControlName="password" [ngClass]="{'is-danger': (!form.controls.password.valid && !form.controls.password.pristine)}">
+            </p>
+
+            <p class="control">
+              <input class="input is-large" type="password" placeholder="Confirmar Senha" formControlName="confirmPassword" [ngClass]="{'is-danger': (!form.controls.confirmPassword.valid && !form.controls.confirmPassword.pristine)}">
+            </p>
+            <p>
+              <button (click)="submit()" [disabled]="!form.valid" class="button  is-large is-fullwidth is-primary is-inverted is-outlined">CADASTRAR</button>
+              <br>
+              <a class="button  is-link is-fullwidth">Voltar para tela de login</a>
+            </p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
