@@ -1,0 +1,29 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Carrinho</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-list no-lines>
+    <ion-item #slidingItem *ngFor="let product of products">
+      <ion-avatar item-start>
+        <img [src]="product.image">
+      </ion-avatar>
+      <h2>{{product.title}}</h2>
+      <p><strong>{{product.price | currency: 'BRL'}}</strong></p>
+      <span item-right>{{product.price | currency: 'BRL'}}</span>
+    </ion-item>
+    <ion-item>
+      <h2>TOTAL</h2>
+      <span item-right>R$ {{ getSubTotal() | currency: 'BRL' }}</span>
+    </ion-item>
+  </ion-list>
+  <div padding>
+    <button ion-button color="secondary" large outline block round (click)="checkout()">CHECKOUT</button>
+  </div>
+</ion-content>

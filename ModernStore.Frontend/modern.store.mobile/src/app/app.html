@@ -1,0 +1,31 @@
+<ion-menu [content]="content" *ngIf="user">
+
+  <ion-content>
+    <p class="text-center">
+      <img src="http://placehold.it/128x128"><br>
+      <strong>{{ user.name }}</strong>
+    </p>
+    <ion-list no-lines>
+      <button menuClose ion-item *ngFor="let p of pages" (click)="openPage(p)">
+       <ion-icon [name]="p.icon" item-left></ion-icon>
+
+        {{p.title}}
+      </button>
+
+      <button menuClose ion-item (click)="goToCart()">
+       <ion-icon name="cart" item-left></ion-icon>
+        Carrinho
+        <ion-badge item-right color="secondary">{{ items.length }}</ion-badge>
+      </button>
+
+      <button menuClose ion-item (click)="logout()">
+         <ion-icon name="power" item-left></ion-icon>
+        Sair
+      </button>
+    </ion-list>
+  </ion-content>
+
+</ion-menu>
+
+<!-- Disable swipe-to-go-back because it's poor UX to combine STGB with side menus -->
+<ion-nav [root]="rootPage" #content swipeBackEnabled="false"></ion-nav>
