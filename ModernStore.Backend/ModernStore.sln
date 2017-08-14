@@ -1,0 +1,64 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26430.12
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ModernStore.Domain", "ModernStore.Domain\ModernStore.Domain.csproj", "{7B6AC4E5-B2AC-40E3-B5B1-A301EC1F21CE}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1 - API", "1 - API", "{80A98F59-A68A-4027-BB4D-011AFDDAF063}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2 - Domain", "2 - Domain", "{F8CD1A41-68F6-47FB-8EA8-2C45704513CF}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3 - Infra", "3 - Infra", "{41E9D4A0-9EFC-4567-B27E-F55C8F7952E1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ModernStore.Domain.Tests", "ModernStore.Domain.Tests\ModernStore.Domain.Tests.csproj", "{944C3BFB-8098-4715-B52F-E55E922B6D02}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ModernStore.Shared", "ModernStore.Shared\ModernStore.Shared.csproj", "{598B60A9-A59F-415A-AA16-265160D0B78B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{4B9847A4-6709-43D7-9B74-1FD6186B69C9}"
+	ProjectSection(SolutionItems) = preProject
+		.gitignore = .gitignore
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ModernStore.Infra", "ModernStore.Infra\ModernStore.Infra.csproj", "{12C6CFEB-3ED3-4396-809A-674F88B1D62F}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ModernStore.Api", "ModernStore.Api\ModernStore.Api.csproj", "{C679D2B7-45F3-4CAE-ADC7-B21ED387B3D0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7B6AC4E5-B2AC-40E3-B5B1-A301EC1F21CE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7B6AC4E5-B2AC-40E3-B5B1-A301EC1F21CE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7B6AC4E5-B2AC-40E3-B5B1-A301EC1F21CE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7B6AC4E5-B2AC-40E3-B5B1-A301EC1F21CE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{944C3BFB-8098-4715-B52F-E55E922B6D02}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{944C3BFB-8098-4715-B52F-E55E922B6D02}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{944C3BFB-8098-4715-B52F-E55E922B6D02}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{944C3BFB-8098-4715-B52F-E55E922B6D02}.Release|Any CPU.Build.0 = Release|Any CPU
+		{598B60A9-A59F-415A-AA16-265160D0B78B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{598B60A9-A59F-415A-AA16-265160D0B78B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{598B60A9-A59F-415A-AA16-265160D0B78B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{598B60A9-A59F-415A-AA16-265160D0B78B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{12C6CFEB-3ED3-4396-809A-674F88B1D62F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{12C6CFEB-3ED3-4396-809A-674F88B1D62F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{12C6CFEB-3ED3-4396-809A-674F88B1D62F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{12C6CFEB-3ED3-4396-809A-674F88B1D62F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C679D2B7-45F3-4CAE-ADC7-B21ED387B3D0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C679D2B7-45F3-4CAE-ADC7-B21ED387B3D0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C679D2B7-45F3-4CAE-ADC7-B21ED387B3D0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C679D2B7-45F3-4CAE-ADC7-B21ED387B3D0}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{7B6AC4E5-B2AC-40E3-B5B1-A301EC1F21CE} = {F8CD1A41-68F6-47FB-8EA8-2C45704513CF}
+		{944C3BFB-8098-4715-B52F-E55E922B6D02} = {F8CD1A41-68F6-47FB-8EA8-2C45704513CF}
+		{598B60A9-A59F-415A-AA16-265160D0B78B} = {F8CD1A41-68F6-47FB-8EA8-2C45704513CF}
+		{12C6CFEB-3ED3-4396-809A-674F88B1D62F} = {41E9D4A0-9EFC-4567-B27E-F55C8F7952E1}
+		{C679D2B7-45F3-4CAE-ADC7-B21ED387B3D0} = {80A98F59-A68A-4027-BB4D-011AFDDAF063}
+	EndGlobalSection
+EndGlobal

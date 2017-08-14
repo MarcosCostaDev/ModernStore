@@ -1,0 +1,50 @@
+**/bin
+**/obj
+**/packages
+**/node_modules
+# See http://help.github.com/ignore-files/ for more about ignoring files.
+
+# compiled output
+ModernStore.Frontend/modern.store.website/dist
+ModernStore.Frontend/modern.store.website/tmp
+
+# dependencies
+ModernStore.Frontend/modern.store.website/node_modules
+
+# IDEs and editors
+ModernStore.Frontend/modern.store.website/.idea
+ModernStore.Frontend/modern.store.website/project
+ModernStore.Frontend/modern.store.website/classpath
+ModernStore.Frontend/modern.store.website/c9/
+ModernStore.Frontend/modern.store.website/*.launch
+ModernStore.Frontend/modern.store.website/settings/
+
+# IDE - VSCode
+ModernStore.Frontend/modern.store.website/scode/*
+!ModernStore.Frontend/modern.store.website/vscode/settings.json
+!ModernStore.Frontend/modern.store.website/vscode/tasks.json
+!ModernStore.Frontend/modern.store.website/vscode/launch.json
+!ModernStore.Frontend/modern.store.website/vscode/extensions.json
+
+# misc
+ModernStore.Frontend/modern.store.website/sass-cache
+ModernStore.Frontend/modern.store.website/connect.lock
+ModernStore.Frontend/modern.store.website/coverage/*
+ModernStore.Frontend/modern.store.website/libpeerconnection.log
+ModernStore.Frontend/modern.store.website/pm-debug.log
+ModernStore.Frontend/modern.store.website/estem.log
+ModernStore.Frontend/modern.store.website/typings
+ModernStore.Frontend/modern.store.website/dist
+
+# e2e
+ModernStore.Frontend/modern.store.website/e2e/*.js
+ModernStore.Frontend/modern.store.website/e2e/*.map
+
+#System Files
+ModernStore.Frontend/modern.store.website/DS_Store
+ModernStore.Frontend/modern.store.websiteThumbs.db
+
+
+ModernStore.Frontend/modern.store.website/dist/inline.c698803898628d017c1f.bundle.js
+ModernStore.Frontend/modern.store.website/dist/main.0b1d04334e4f6161aa01.bundle.js
+ModernStore.Frontend/modern.store.website/dist/main.0b1d04334e4f6161aa01.bundle.js
