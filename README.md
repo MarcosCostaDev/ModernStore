@@ -9,6 +9,7 @@
 - DAPPER
 
 #### DESIGN PATTERNS
+- SOLID
 - DDD (Driven Domain Design)
 - CQRS
 - Repository Patterns
